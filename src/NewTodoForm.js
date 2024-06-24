@@ -1,6 +1,6 @@
 import react, {useState} from "react";
 
-const NewTodoForm = () => {
+const NewTodoForm = ({addTodo}) => {
     const [formData, setFormData] = useState("");
 
     const handleChange = (e) => {
@@ -9,7 +9,7 @@ const NewTodoForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // addTodo(formData);
+        addTodo(formData);
         setFormData("");
     }
 
