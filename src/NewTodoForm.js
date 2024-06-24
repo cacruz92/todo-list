@@ -16,7 +16,8 @@ const NewTodoForm = ({addTodo}) => {
     return (
         <div>
             <form className="newTodoForm" onSubmit={handleSubmit}>
-            <label htmlFor="todo">Color: </label>
+            <label htmlFor="todo"><b>Add a Todo Item: </b> </label>
+            
             <input 
             id="todo" 
             type="text"
@@ -25,7 +26,7 @@ const NewTodoForm = ({addTodo}) => {
             value={formData}
             onChange={handleChange}
              /> 
-
+            <br></br>
              <button>Add Todo!</button>
             </form>
         </div>
